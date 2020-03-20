@@ -1,0 +1,171 @@
+$mobile: max-width 480px;
+$mobile_grande: max-width 768px;
+$tablet: max-width 960px;
+$tablet_grande: max-width 1024px;
+$wide: max-width 1200px;
+$wide_grande: max-width 1400px;
+
+/*==============================
+=            mixins            =
+==============================*/
+
+// clearfix
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: ' ';
+        display: table;
+    }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+
+.layout {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 0 1.25rem;
+    @include clearfix;
+}
+
+.desktop {
+    @include breakpoint($tablet) {
+        display: none !important;
+    }
+}
+
+.mobile {
+    display: none !important;
+    @include breakpoint($tablet) {
+        display: inline-block !important;
+    }
+}
+
+span,
+select,
+article,
+section,
+header,
+aside,
+footer,
+textarea,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div,
+ul,
+li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+iframe[name="google_conversion_frame"] {
+    height: 0 !important;
+    overflow: hidden;
+    display: block;
+}
+
+pre {
+    z-index: 2;
+}
+
+img[data-pin-nopin="true"] {
+    display: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden, .esconder {
+    display: none;
+}
+
+.clearfix, .center:after {
+    clear: both;
+    height: 0;
+}
+
+header {
+    nav {
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.updated {
+    display: none;
+}
+
+.edit-link {
+    display: none;
+}

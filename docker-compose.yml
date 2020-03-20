@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: publicidade_legal
+      MYSQL_ROOT_PASSWORD: 123456
+    ports:
+      - "3308:3306"
+
+  wordpress:
+    image: wordpress
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - 8080:80
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: 123456
+      WORDPRESS_DB_NAME: publicidade_legal
+      WORDPRESS_DB_CHARSET: utf8
+      WORDPRESS_DB_COLLATE: utf8_general_ci
+      WORDPRESS_TABLE_PREFIX: wp_

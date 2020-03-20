@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import "normalize";
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+// @import "fontawesome/fontawesome.scss";
+@import "mixins_fixes";
+@import "gerais";
+@import "menu_folha";
+@import "forms";
+// @import "modals";
+// @import "plugins";
+
+.btn {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	&.azul {
+		background: $cor1;
+		color: #fff;
+	} 
+}
+
+header {
+	background: $cor1;
+	text-align: center;
+	padding: 20px 0;
+	.layout {
+		.titulo_principal {
+			line-height: 100%;
+			color: #fff;
+			// margin-bottom: 10px;
+			font-weight: 300;
+			font-size: 26px;
+			text-transform: uppercase;
+		}
+		.subtitulo {
+			line-height: 100%;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+}
+
+.busca_wrap { 
+	background: #fff;
+	padding: 30px 0;
+	.layout { 
+		max-width: 1100px;
+		form { 
+			display: flex;
+			@include breakpoint($tablet) {
+				flex-direction: column
+			}
+			div {
+				margin: 0 10px;
+				@include breakpoint($tablet) {
+					margin: 10px 0;
+				}
+				&:nth-child(1) {
+					flex: 1;
+					margin-left: 0;
+				}
+				&:nth-child(2) {
+					flex: 1;
+				}
+				&:nth-child(3) {
+					flex: .5;
+					margin-right: 0;
+				}
+				input { 
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+}
+
+.resultados { 
+	background: #f7f7f8;
+	padding: 60px 0;
+	@include breakpoint($tablet_grande) {
+		padding: 30px 0;
+	}
+	.layout { 
+		max-width: 1100px;
+
+		.bloco { 
+			margin-bottom: 30px;
+			padding: 20px;
+			background: #fff;
+			-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.05);
+			-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.05);
+			box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.05);
+			&.agrupamento {
+				.data { 
+					color: $cor1;
+					font-size: 19px;
+				}
+				.linha {
+					padding: 20px 0;
+					border-bottom: 1px solid #e5e5e5;
+					.btn { 	
+						position: absolute;
+						top: 12px;
+					}
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.linha { 
+				position: relative;
+				&:last-child {
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+				.nome { 
+					font-size: 16px;
+					font-weight: 600;
+				}
+				.tag {
+					font-weight: 600;
+					font-size: 12px;
+					text-transform: uppercase;
+					color: $cor1;
+					margin-bottom: 10px;
+				}
+				.btn { 	
+					position: absolute;
+					top: 0px;
+					right: 0;
+					background: #f3f9fc;
+					color: $cor1;
+					font-weight: 600;
+					font-size: 12px;
+					display: block;
+					padding: 10px 10px;
+					text-align: center;
+				}
+			}
+		}
+
+		.ad { 
+			margin-bottom: 40px;
+			margin-top: 10px;
+			.superbanner { 
+				width: 100%;
+				max-width: 725px;
+				height: 90px;
+				margin-left: auto;
+				margin-right: auto;
+				background: blue;
+			}
+		}
+	}
+}

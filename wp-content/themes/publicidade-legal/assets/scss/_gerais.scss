@@ -1,0 +1,43 @@
+/*=================================
+=            variaveis            =
+=================================*/
+
+$fonte_cor: #1f2d3d;
+$cor1: #0f84c0;
+$fonte1: 'Montserrat', sans-serif;
+
+/*========================================
+=                  Css base              =
+========================================*/
+
+body {
+	background: #f7f7f8;
+	font-family: $fonte1;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+p {
+	font-family: $fonte1;
+	font-size: 18px;
+	color: $fonte_cor;
+	font-weight: 400;
+}
+
+strong {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+a {}
+
+a {
+	text-transform: none;
+	text-decoration: none;
+	color: $cor1;
+}
+
+

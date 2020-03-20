@@ -1,0 +1,77 @@
+
+/*===================================
+=            formulários            =
+===================================*/
+form,
+.form {
+    .row, .linha {
+        margin-bottom: 15px;
+        @include breakpoint($mobile) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .input_style {
+        width: 100%;
+        outline: none;
+        border: 1px solid #ececec;
+        background-color: #ffffff;
+        height: 40px;
+        font-weight: 400;
+        padding-left: 15px;
+        font-size: 13px;
+        color: #8c9299;
+        @include placeholder {
+            opacity: 1 !important;
+        }
+    }
+    .required {
+        label {
+            &:after {
+                content: "*";
+                display: inline-block;
+                color: red;
+                position: relative;
+                top: 4px;
+                margin-left: 4px;
+            }
+        }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="file"],
+    input[type="password"],
+    input[type="search"] {
+        @extend .input_style;
+        &:hover,
+        &:focus {}
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+    label {
+        display: block;
+    }
+    select {
+        @extend .input_style;
+        option {}
+    }
+    textarea {
+        @extend .input_style;
+        &:hover,
+        &:focus {}
+    }
+    .wpcf7-submit,
+    input[type="submit"],
+    button[type="submit"] {
+        display: inline-block;
+        cursor: pointer;
+        border: 0;
+        &:disabled {
+            cursor: not-allowed;
+        }
+    } // form
+} // form

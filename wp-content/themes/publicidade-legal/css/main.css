@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*==============================
+=            mixins            =
+==============================*/
+.layout {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 1.25rem;
+}
+
+.layout::after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+
+@media (max-width: 960px) {
+  .desktop {
+    display: none !important;
+  }
+}
+
+.mobile {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  .mobile {
+    display: inline-block !important;
+  }
+}
+
+span,
+select,
+article,
+section,
+header,
+aside,
+footer,
+textarea,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div,
+ul,
+li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+iframe[name="google_conversion_frame"] {
+  height: 0 !important;
+  overflow: hidden;
+  display: block;
+}
+
+pre {
+  z-index: 2;
+}
+
+img[data-pin-nopin="true"] {
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden, .esconder {
+  display: none;
+}
+
+.clearfix, .center:after {
+  clear: both;
+  height: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.updated {
+  display: none;
+}
+
+.edit-link {
+  display: none;
+}
+
+/*=================================
+=            variaveis            =
+=================================*/
+/*========================================
+=                  Css base              =
+========================================*/
+body {
+  background: #f7f7f8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #1f2d3d;
+  font-weight: 400;
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: #0f84c0;
+}
+
+.menu-folha {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+
+.menu-folha .container-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-folha .container-menu .button-menu-mobile {
+  display: none;
+}
+
+.menu-folha .container-menu > .logo-folha img {
+  width: 30px;
+}
+
+.menu-folha .container-menu > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-folha .container-menu > ul > li {
+  position: relative;
+  margin: 0 10px;
+  padding: 11px 0;
+}
+
+.menu-folha .container-menu > ul > li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2196f3;
+}
+
+.menu-folha .container-menu > ul > li.color-default a {
+  color: #2196f3;
+}
+
+.menu-folha .container-menu > ul > li.color-entretenimento a {
+  color: #f44336;
+}
+
+.menu-folha .container-menu > ul > li.color-geral a {
+  color: #607d8b;
+}
+
+.menu-folha .container-menu > ul > li.color-policia a {
+  color: #795548;
+}
+
+.menu-folha .container-menu > ul > li.color-politica a {
+  color: #4caf50;
+}
+
+.menu-folha .container-menu > ul > li.color-economia a {
+  color: #00bcd4;
+}
+
+.menu-folha .container-menu > ul > li.color-esportes a {
+  color: #ff9800;
+}
+
+.menu-folha .container-menu > ul > li.color-social a {
+  color: #ffc107;
+}
+
+.menu-folha .container-menu > ul > li.color-cidades a {
+  color: #009688;
+}
+
+.menu-folha .container-menu > ul > li.color-videos a {
+  color: #673ab7;
+}
+
+.menu-folha .container-menu > ul > li ul {
+  display: none;
+  border-top: 2px solid transparent;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.menu-folha .container-menu > ul > li ul li {
+  padding: 5px 10px;
+}
+
+.menu-folha .container-menu > ul > li.color-default ul {
+  border-color: #2196f3;
+}
+
+.menu-folha .container-menu > ul > li.color-entretenimento ul {
+  border-color: #f44336;
+}
+
+.menu-folha .container-menu > ul > li.color-geral ul {
+  border-color: #607d8b;
+}
+
+.menu-folha .container-menu > ul > li.color-policia ul {
+  border-color: #795548;
+}
+
+.menu-folha .container-menu > ul > li.color-politica ul {
+  border-color: #4caf50;
+}
+
+.menu-folha .container-menu > ul > li.color-economia ul {
+  border-color: #00bcd4;
+}
+
+.menu-folha .container-menu > ul > li.color-esportes ul {
+  border-color: #ff9800;
+}
+
+.menu-folha .container-menu > ul > li.color-social ul {
+  border-color: #ffc107;
+}
+
+.menu-folha .container-menu > ul > li.color-cidades ul {
+  border-color: #009688;
+}
+
+.menu-folha .container-menu > ul > li.color-videos ul {
+  border-color: #673ab7;
+}
+
+.menu-folha .container-menu > ul > li:hover ul {
+  display: block;
+}
+
+.menu-folha .container-menu > ul > li:hover ul li a {
+  display: block;
+  white-space: nowrap;
+}
+
+/*===================================
+=            formulários            =
+===================================*/
+form .row, form .linha,
+.form .row,
+.form .linha {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+  form .row, form .linha,
+  .form .row,
+  .form .linha {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+form .input_style, form input[type="text"],
+form input[type="email"],
+form input[type="url"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="file"],
+form input[type="password"],
+form input[type="search"],
+form .form input[type="text"], .form form input[type="text"],
+form .form input[type="email"], .form form input[type="email"],
+form .form input[type="url"], .form form input[type="url"],
+form .form input[type="date"], .form form input[type="date"],
+form .form input[type="tel"], .form form input[type="tel"],
+form .form input[type="file"], .form form input[type="file"],
+form .form input[type="password"], .form form input[type="password"],
+form .form input[type="search"], .form form input[type="search"], form select,
+form .form select, .form form select, form textarea,
+form .form textarea, .form form textarea,
+.form .input_style,
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="tel"],
+.form input[type="file"],
+.form input[type="password"],
+.form input[type="search"],
+.form form select,
+form .form select,
+.form select,
+.form form textarea,
+form .form textarea,
+.form textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  height: 40px;
+  font-weight: 400;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #8c9299;
+}
+
+form .input_style::-webkit-input-placeholder, form input[type="text"]::-webkit-input-placeholder,
+form input[type="email"]::-webkit-input-placeholder,
+form input[type="url"]::-webkit-input-placeholder,
+form input[type="date"]::-webkit-input-placeholder,
+form input[type="tel"]::-webkit-input-placeholder,
+form input[type="file"]::-webkit-input-placeholder,
+form input[type="password"]::-webkit-input-placeholder,
+form input[type="search"]::-webkit-input-placeholder,
+form .form input[type="text"]::-webkit-input-placeholder, .form form input[type="text"]::-webkit-input-placeholder,
+form .form input[type="email"]::-webkit-input-placeholder, .form form input[type="email"]::-webkit-input-placeholder,
+form .form input[type="url"]::-webkit-input-placeholder, .form form input[type="url"]::-webkit-input-placeholder,
+form .form input[type="date"]::-webkit-input-placeholder, .form form input[type="date"]::-webkit-input-placeholder,
+form .form input[type="tel"]::-webkit-input-placeholder, .form form input[type="tel"]::-webkit-input-placeholder,
+form .form input[type="file"]::-webkit-input-placeholder, .form form input[type="file"]::-webkit-input-placeholder,
+form .form input[type="password"]::-webkit-input-placeholder, .form form input[type="password"]::-webkit-input-placeholder,
+form .form input[type="search"]::-webkit-input-placeholder, .form form input[type="search"]::-webkit-input-placeholder, form select::-webkit-input-placeholder,
+form .form select::-webkit-input-placeholder, .form form select::-webkit-input-placeholder, form textarea::-webkit-input-placeholder,
+form .form textarea::-webkit-input-placeholder, .form form textarea::-webkit-input-placeholder,
+.form .input_style::-webkit-input-placeholder,
+.form input[type="text"]::-webkit-input-placeholder,
+.form input[type="email"]::-webkit-input-placeholder,
+.form input[type="url"]::-webkit-input-placeholder,
+.form input[type="date"]::-webkit-input-placeholder,
+.form input[type="tel"]::-webkit-input-placeholder,
+.form input[type="file"]::-webkit-input-placeholder,
+.form input[type="password"]::-webkit-input-placeholder,
+.form input[type="search"]::-webkit-input-placeholder,
+.form form select::-webkit-input-placeholder,
+form .form select::-webkit-input-placeholder,
+.form select::-webkit-input-placeholder,
+.form form textarea::-webkit-input-placeholder,
+form .form textarea::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  opacity: 1 !important;
+}
+
+form .input_style:-moz-placeholder, form input:-moz-placeholder[type="text"],
+form input:-moz-placeholder[type="email"],
+form input:-moz-placeholder[type="url"],
+form input:-moz-placeholder[type="date"],
+form input:-moz-placeholder[type="tel"],
+form input:-moz-placeholder[type="file"],
+form input:-moz-placeholder[type="password"],
+form input:-moz-placeholder[type="search"], form select:-moz-placeholder,
+form .form select:-moz-placeholder, .form form select:-moz-placeholder, form textarea:-moz-placeholder,
+form .form textarea:-moz-placeholder, .form form textarea:-moz-placeholder,
+.form .input_style:-moz-placeholder,
+.form input:-moz-placeholder[type="text"],
+.form input:-moz-placeholder[type="email"],
+.form input:-moz-placeholder[type="url"],
+.form input:-moz-placeholder[type="date"],
+.form input:-moz-placeholder[type="tel"],
+.form input:-moz-placeholder[type="file"],
+.form input:-moz-placeholder[type="password"],
+.form input:-moz-placeholder[type="search"],
+.form form select:-moz-placeholder,
+form .form select:-moz-placeholder,
+.form select:-moz-placeholder,
+.form form textarea:-moz-placeholder,
+form .form textarea:-moz-placeholder,
+.form textarea:-moz-placeholder {
+  opacity: 1 !important;
+}
+
+form .input_style::-moz-placeholder, form input[type="text"]::-moz-placeholder,
+form input[type="email"]::-moz-placeholder,
+form input[type="url"]::-moz-placeholder,
+form input[type="date"]::-moz-placeholder,
+form input[type="tel"]::-moz-placeholder,
+form input[type="file"]::-moz-placeholder,
+form input[type="password"]::-moz-placeholder,
+form input[type="search"]::-moz-placeholder,
+form .form input[type="text"]::-moz-placeholder, .form form input[type="text"]::-moz-placeholder,
+form .form input[type="email"]::-moz-placeholder, .form form input[type="email"]::-moz-placeholder,
+form .form input[type="url"]::-moz-placeholder, .form form input[type="url"]::-moz-placeholder,
+form .form input[type="date"]::-moz-placeholder, .form form input[type="date"]::-moz-placeholder,
+form .form input[type="tel"]::-moz-placeholder, .form form input[type="tel"]::-moz-placeholder,
+form .form input[type="file"]::-moz-placeholder, .form form input[type="file"]::-moz-placeholder,
+form .form input[type="password"]::-moz-placeholder, .form form input[type="password"]::-moz-placeholder,
+form .form input[type="search"]::-moz-placeholder, .form form input[type="search"]::-moz-placeholder, form select::-moz-placeholder,
+form .form select::-moz-placeholder, .form form select::-moz-placeholder, form textarea::-moz-placeholder,
+form .form textarea::-moz-placeholder, .form form textarea::-moz-placeholder,
+.form .input_style::-moz-placeholder,
+.form input[type="text"]::-moz-placeholder,
+.form input[type="email"]::-moz-placeholder,
+.form input[type="url"]::-moz-placeholder,
+.form input[type="date"]::-moz-placeholder,
+.form input[type="tel"]::-moz-placeholder,
+.form input[type="file"]::-moz-placeholder,
+.form input[type="password"]::-moz-placeholder,
+.form input[type="search"]::-moz-placeholder,
+.form form select::-moz-placeholder,
+form .form select::-moz-placeholder,
+.form select::-moz-placeholder,
+.form form textarea::-moz-placeholder,
+form .form textarea::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  opacity: 1 !important;
+}
+
+form .input_style:-ms-input-placeholder, form input:-ms-input-placeholder[type="text"],
+form input:-ms-input-placeholder[type="email"],
+form input:-ms-input-placeholder[type="url"],
+form input:-ms-input-placeholder[type="date"],
+form input:-ms-input-placeholder[type="tel"],
+form input:-ms-input-placeholder[type="file"],
+form input:-ms-input-placeholder[type="password"],
+form input:-ms-input-placeholder[type="search"], form select:-ms-input-placeholder,
+form .form select:-ms-input-placeholder, .form form select:-ms-input-placeholder, form textarea:-ms-input-placeholder,
+form .form textarea:-ms-input-placeholder, .form form textarea:-ms-input-placeholder,
+.form .input_style:-ms-input-placeholder,
+.form input:-ms-input-placeholder[type="text"],
+.form input:-ms-input-placeholder[type="email"],
+.form input:-ms-input-placeholder[type="url"],
+.form input:-ms-input-placeholder[type="date"],
+.form input:-ms-input-placeholder[type="tel"],
+.form input:-ms-input-placeholder[type="file"],
+.form input:-ms-input-placeholder[type="password"],
+.form input:-ms-input-placeholder[type="search"],
+.form form select:-ms-input-placeholder,
+form .form select:-ms-input-placeholder,
+.form select:-ms-input-placeholder,
+.form form textarea:-ms-input-placeholder,
+form .form textarea:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  opacity: 1 !important;
+}
+
+form .required label:after,
+.form .required label:after {
+  content: "*";
+  display: inline-block;
+  color: red;
+  position: relative;
+  top: 4px;
+  margin-left: 4px;
+}
+
+form input[type="text"]:disabled,
+form input[type="email"]:disabled,
+form input[type="url"]:disabled,
+form input[type="date"]:disabled,
+form input[type="tel"]:disabled,
+form input[type="file"]:disabled,
+form input[type="password"]:disabled,
+form input[type="search"]:disabled,
+.form input[type="text"]:disabled,
+.form input[type="email"]:disabled,
+.form input[type="url"]:disabled,
+.form input[type="date"]:disabled,
+.form input[type="tel"]:disabled,
+.form input[type="file"]:disabled,
+.form input[type="password"]:disabled,
+.form input[type="search"]:disabled {
+  cursor: not-allowed;
+}
+
+form label,
+.form label {
+  display: block;
+}
+
+form .wpcf7-submit,
+form input[type="submit"],
+form button[type="submit"],
+.form .wpcf7-submit,
+.form input[type="submit"],
+.form button[type="submit"] {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+}
+
+form .wpcf7-submit:disabled,
+form input[type="submit"]:disabled,
+form button[type="submit"]:disabled,
+.form .wpcf7-submit:disabled,
+.form input[type="submit"]:disabled,
+.form button[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+.btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn.azul {
+  background: #0f84c0;
+  color: #fff;
+}
+
+header {
+  background: #0f84c0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header .layout .titulo_principal {
+  line-height: 100%;
+  color: #fff;
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+header .layout .subtitulo {
+  line-height: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.busca_wrap {
+  background: #fff;
+  padding: 30px 0;
+}
+
+.busca_wrap .layout {
+  max-width: 1100px;
+}
+
+.busca_wrap .layout form {
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .busca_wrap .layout form {
+    flex-direction: column;
+  }
+}
+
+.busca_wrap .layout form div {
+  margin: 0 10px;
+}
+
+@media (max-width: 960px) {
+  .busca_wrap .layout form div {
+    margin: 10px 0;
+  }
+}
+
+.busca_wrap .layout form div:nth-child(1) {
+  flex: 1;
+  margin-left: 0;
+}
+
+.busca_wrap .layout form div:nth-child(2) {
+  flex: 1;
+}
+
+.busca_wrap .layout form div:nth-child(3) {
+  flex: .5;
+  margin-right: 0;
+}
+
+.busca_wrap .layout form div input {
+  padding-left: 10px;
+}
+
+.resultados {
+  background: #f7f7f8;
+  padding: 60px 0;
+}
+
+@media (max-width: 1024px) {
+  .resultados {
+    padding: 30px 0;
+  }
+}
+
+.resultados .layout {
+  max-width: 1100px;
+}
+
+.resultados .layout .bloco {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+.resultados .layout .bloco.agrupamento .data {
+  color: #0f84c0;
+  font-size: 19px;
+}
+
+.resultados .layout .bloco.agrupamento .linha {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.resultados .layout .bloco.agrupamento .linha .btn {
+  position: absolute;
+  top: 12px;
+}
+
+.resultados .layout .bloco:last-child {
+  margin-bottom: 0;
+}
+
+.resultados .layout .bloco .linha {
+  position: relative;
+}
+
+.resultados .layout .bloco .linha:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resultados .layout .bloco .linha .nome {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resultados .layout .bloco .linha .tag {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #0f84c0;
+  margin-bottom: 10px;
+}
+
+.resultados .layout .bloco .linha .btn {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #f3f9fc;
+  color: #0f84c0;
+  font-weight: 600;
+  font-size: 12px;
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.resultados .layout .ad {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.resultados .layout .ad .superbanner {
+  width: 100%;
+  max-width: 725px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background: blue;
+}

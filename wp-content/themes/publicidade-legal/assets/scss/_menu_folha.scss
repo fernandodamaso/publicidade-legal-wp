@@ -1,0 +1,92 @@
+
+.menu-folha{
+	display: flex;
+	background-color:#fff;
+	align-items: center;
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+}
+
+.menu-folha .container-menu {
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.menu-folha .container-menu .button-menu-mobile {
+	display: none;
+}
+
+.menu-folha .container-menu > .logo-folha img {
+	width: 30px;
+}
+
+.menu-folha .container-menu > ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-folha .container-menu > ul > li {
+	position: relative;
+	margin: 0 10px;
+	padding: 11px 0;
+
+}
+
+.menu-folha .container-menu > ul > li a {
+	font-size: 14px;
+	font-weight: 500;
+	color: #2196f3;
+}
+
+.menu-folha .container-menu > ul > li.color-default a {color:#2196f3;}
+.menu-folha .container-menu > ul > li.color-entretenimento a {color:#f44336;}
+.menu-folha .container-menu > ul > li.color-geral a {color:#607d8b;}
+.menu-folha .container-menu > ul > li.color-policia a {color:#795548;}
+.menu-folha .container-menu > ul > li.color-politica a {color:#4caf50;}
+.menu-folha .container-menu > ul > li.color-economia a {color:#00bcd4;}
+.menu-folha .container-menu > ul > li.color-esportes a {color:#ff9800;}
+.menu-folha .container-menu > ul > li.color-social a {color:#ffc107;}
+.menu-folha .container-menu > ul > li.color-cidades a {color:#009688;}
+.menu-folha .container-menu > ul > li.color-videos a {color:#673ab7;}
+
+
+.menu-folha .container-menu > ul > li ul {
+	display: none;
+	border-top: 2px solid transparent;
+	position: absolute;
+	top: 100%;
+	background-color: #fff;
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;		
+}
+
+.menu-folha .container-menu > ul > li ul li {
+	padding: 5px 10px;
+}
+
+.menu-folha .container-menu > ul > li.color-default ul {border-color:#2196f3;}
+.menu-folha .container-menu > ul > li.color-entretenimento ul {border-color:#f44336;}
+.menu-folha .container-menu > ul > li.color-geral ul {border-color:#607d8b;}
+.menu-folha .container-menu > ul > li.color-policia ul {border-color:#795548;}
+.menu-folha .container-menu > ul > li.color-politica ul {border-color:#4caf50;}
+.menu-folha .container-menu > ul > li.color-economia ul {border-color:#00bcd4;}
+.menu-folha .container-menu > ul > li.color-esportes ul {border-color:#ff9800;}
+.menu-folha .container-menu > ul > li.color-social ul {border-color:#ffc107;}
+.menu-folha .container-menu > ul > li.color-cidades ul {border-color:#009688;}
+.menu-folha .container-menu > ul > li.color-videos ul {border-color:#673ab7;}
+
+
+.menu-folha .container-menu > ul > li:hover ul {
+	display: block;
+}
+
+.menu-folha .container-menu > ul > li:hover ul li a {
+	display: block;
+	white-space: nowrap;
+}
